@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Plus, Trash2, CheckCircle, Clock, Filter, Search } from 'lucide-react';
 import { taskApi } from '../services/api';
+// import logo from '../assets/index';
 
 interface Task {
     id: number;
@@ -103,10 +104,11 @@ const TaskManager = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-400 p-4">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <div className="bg-white rounded-xl shadow-lg p-6 mb-6">
+        <div className="bg-white rounded-xl shadow-lg p-6 mb-6 text-center">
+          <img src={require('../assets/cashflow.png')} alt="Image"  className='flex justify-center items-center ml-[35%]'/>
           <h1 className="text-3xl font-bold text-gray-800 mb-2">
             Gestionnaire de Tâches
           </h1>
