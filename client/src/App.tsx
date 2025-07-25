@@ -1,9 +1,3 @@
-// function returnMyName(name:number|string){
-//   console.log(name);
-// }
-
-// returnMyName(22);
-// returnMyName("gaga");
 import TaskForm from './components/TaskForm';
 
 const App: React.FC = ()=> {
